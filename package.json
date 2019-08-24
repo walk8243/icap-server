@@ -1,0 +1,16 @@
+{
+  "name": "icap-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn run tsc",
+    "start": "node ./dist/server.js"
+  },
+  "repository": "git@github.com:walk8243/icap-server.git",
+  "author": "walk8243 <walk8243@gmail.com>",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "typescript": "^3.5.3"
+  }
+}

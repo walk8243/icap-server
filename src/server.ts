@@ -7,7 +7,7 @@ const server = createServer((c) => {
     console.log('client disconnected');
   });
   c.write('hello\n');
-  c.pipe(c);
+  c.pipe(c); // endじゃなくて、pipeにしないと'client disconnected'が表示されない。
 });
 server.on('error', (err) => {
   throw err;
